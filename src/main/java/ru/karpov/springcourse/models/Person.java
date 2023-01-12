@@ -3,24 +3,32 @@ package ru.karpov.springcourse.models;
 public class Person {
     private int id;
     private String name;
-    private String surname;
-    private int age;
 
-    public String getSurname() {
-        return surname;
+    public Person() {
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public Person(int id, String name) {
+        this.id = id;
+        this.name = name;
+//        this.surname = surname;
+//        this.email = email;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
+//    public String getSurname() {
+//        return surname;
+//    }
+//
+//    public void setSurname(String surname) {
+//        this.surname = surname;
+//    }
+//
+//    public String getEmail() {
+//        return email;
+//    }
+//
+//    public void setEmail(String email) {
+//        this.email = email;
+//    }
 
     public int getId() {
         return id;
@@ -38,10 +46,4 @@ public class Person {
         this.name = name;
     }
 
-    public Person(int id, String name, String surname, int age) {
-        this.id = id;
-        this.name = name;
-        this.surname = surname;
-        this.age = age;
-    }
 }
